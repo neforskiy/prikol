@@ -1,7 +1,7 @@
-const Router = require('express')
-const router = new Router()
-const testController = require('../controllers/testController')
+const Router = require('express');
+const router = new Router();
+const testController = require('../controllers/testController');
 
-router.get('/', testController.test)
+router.get('/', testController.test); // Этот маршрут будет доступен по /api/test
 
-module.exports = router
+module.exports = router;

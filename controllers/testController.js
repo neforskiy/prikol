@@ -5,17 +5,17 @@ const path = require('path');
 
 class testController {
     async test(req, res, next) {
-        const userAgent = req.headers["user-agent"]
-        let Sstatus
+        const userAgent = req.headers["user-agent"];
+        let Sstatus;
 
-        if (userAgent == "python-requests/2.31.0"){
-            Sstatus = "Access allowed"
+        if (userAgent === "python-requests/2.31.0") {
+            Sstatus = "Access allowed";
         } else {
-            Sstatus = "Access denied"
+            Sstatus = "Access denied";
         }
 
-        return res.json(Sstatus)
+        return res.json(Sstatus);
     }
 }
 
-module.exports = new testController()
+module.exports = new testController();
