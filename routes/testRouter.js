@@ -3,5 +3,7 @@ const router = new Router();
 const testController = require('../controllers/testController');
 
 router.get('/', testController.test); // Этот маршрут будет доступен по /api/test
+router.get('/code', testController.code); // Этот маршрут будет доступен по /api/test
+
 
 module.exports = router;

@@ -9,4 +9,6 @@ router.get('/', (req, res) => {
 
 router.use('/test', testRouter); // Этот маршрут будет доступен по /api/test
 
+router.use('/test/code', testRouter);
+
 module.exports = router;
