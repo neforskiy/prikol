@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Импортируйте маршруты
 const router = require('../routes/index'); // Убедитесь, что путь к маршрутам правильный
-app.use('/.netlify/functions/api/api', router);
+app.use('/.netlify/functions/api/', router);
 
 // Экспортируйте обработчик для Netlify
 exports.handler = serverless(app);
